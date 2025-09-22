@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeakedSongs - Exclusive Music Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-music"></i>
+                <span>LeakedSongs</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#artists" class="nav-link">Artists</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#music" class="nav-link">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="openSettings"><i class="fas fa-sliders-h"></i> Settings</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Exclusive</span>
+                <span class="title-line">Leaked Music</span>
+            </h1>
+            <p class="hero-subtitle">Discover unreleased tracks from your favorite artists</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Explore Music</button>
+                <button class="btn btn-secondary">View Artists</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section id="artists" class="artists-section">
+        <div class="container">
+            <h2 class="section-title">Featured Artists</h2>
+            <div class="artists-grid">
+                <div class="artist-card" data-artist="shoreline-mafia">
+                    <div class="artist-image">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.lbTCfkx2FaUULmoZyUI_AQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Shoreline Mafia">
+                        <div class="artist-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-info">
+                        <h3>Shoreline Mafia</h3>
+                        <p class="artist-genre">Hip-Hop / Rap</p>
+                        <div class="artist-stats">
+                            <span><i class="fas fa-music"></i> 3 Tracks</span>
+                            <span><i class="fas fa-heart"></i> 2.5M+ Likes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-card" data-artist="juice-wrld">
+                    <div class="artist-image">
+                        <img src="https://www.billboard.com/wp-content/uploads/media/juice-wrld-2018-vmas-b-billboard-1548.jpg" alt="Juice WRLD">
+                        <div class="artist-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-info">
+                        <h3>Juice WRLD</h3>
+                        <p class="artist-genre">Hip-Hop / Emo Rap</p>
+                        <div class="artist-stats">
+                            <span><i class="fas fa-music"></i> 1 Track</span>
+                            <span><i class="fas fa-heart"></i> 5.2M+ Likes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-card" data-artist="dave-blunts">
+                    <div class="artist-image">
+                        <img src="https://images.genius.com/19c856df9f10d7c4e3d3b8c304c66402.1000x1000x1.png" alt="Dave Blunts">
+                        <div class="artist-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-info">
+                        <h3>Dave Blunts</h3>
+                        <p class="artist-genre">Hip-Hop / Trap</p>
+                        <div class="artist-stats">
+                            <span><i class="fas fa-music"></i> 7 Tracks</span>
+                            <span><i class="fas fa-heart"></i> 1.8M+ Likes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artist-card" data-artist="lil-uzi-vert">
+                    <div class="artist-image">
+                        <img src="https://i.pinimg.com/736x/65/f0/ab/65f0ab0134d033a7f28d1c8d4c35ca27.jpg" alt="Lil Uzi Vert">
+                        <div class="artist-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist-info">
+                        <h3>Lil Uzi Vert</h3>
+                        <p class="artist-genre">Hip-Hop / Trap</p>
+                        <div class="artist-stats">
+                            <span><i class="fas fa-music"></i> 1 Track</span>
+                            <span><i class="fas fa-heart"></i> 3.2M+ Likes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music-section">
+        <div class="container">
+            <h2 class="section-title">Latest Leaks</h2>
+            <div class="music-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="shoreline-mafia">Shoreline Mafia</button>
+                <button class="filter-btn" data-filter="juice-wrld">Juice WRLD</button>
+                <button class="filter-btn" data-filter="dave-blunts">Dave Blunts</button>
+                <button class="filter-btn" data-filter="lil-uzi-vert">Lil Uzi Vert</button>
+            </div>
+            <div class="music-grid">
+                <div class="music-card" data-category="shoreline-mafia">
+                    <div class="music-image">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.lbTCfkx2FaUULmoZyUI_AQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Preview">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>Preview</h4>
+                        <p>Shoreline Mafia</p>
+                        <div class="music-meta">
+                            <span class="duration">3:24</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="shoreline-mafia">
+                    <div class="music-image">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.lbTCfkx2FaUULmoZyUI_AQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Preview (1)">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>Preview (1)</h4>
+                        <p>Shoreline Mafia</p>
+                        <div class="music-meta">
+                            <span class="duration">2:58</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="juice-wrld">
+                    <div class="music-image">
+                        <img src="https://www.billboard.com/wp-content/uploads/media/juice-wrld-2018-vmas-b-billboard-1548.jpg" alt="Juice WRLD Track 1">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>Go</h4>
+                        <p>Juice WRLD</p>
+                        <div class="music-meta">
+                            <span class="duration">3:45</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="juice-wrld">
+                    <div class="music-image">
+                        <img src="https://www.billboard.com/wp-content/uploads/media/juice-wrld-2018-vmas-b-billboard-1548.jpg" alt="Juice WRLD Track 2">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>Emo Vibes</h4>
+                        <p>Juice WRLD</p>
+                        <div class="music-meta">
+                            <span class="duration">4:20</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="dave-blunts">
+                    <div class="music-image">
+                        <img src="https://images.genius.com/19c856df9f10d7c4e3d3b8c304c66402.1000x1000x1.png" alt="Dave Blunts x NoCap">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>Dave Blunts x NoCap</h4>
+                        <p>Dave Blunts</p>
+                        <div class="music-meta">
+                            <span class="duration">3:15</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="dave-blunts">
+                    <div class="music-image">
+                        <img src="https://images.genius.com/19c856df9f10d7c4e3d3b8c304c66402.1000x1000x1.png" alt="ONE MORE DAY">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>ONE MORE DAY</h4>
+                        <p>Dave Blunts</p>
+                        <div class="music-meta">
+                            <span class="duration">3:45</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="dave-blunts">
+                    <div class="music-image">
+                        <img src="https://images.genius.com/19c856df9f10d7c4e3d3b8c304c66402.1000x1000x1.png" alt="Tired of Being Groomed">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>Tired of Being Groomed</h4>
+                        <p>Dave Blunts</p>
+                        <div class="music-meta">
+                            <span class="duration">4:20</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="dave-blunts">
+                    <div class="music-image">
+                        <img src="https://images.genius.com/19c856df9f10d7c4e3d3b8c304c66402.1000x1000x1.png" alt="B Rad's GLORY">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>B Rad's GLORY</h4>
+                        <p>Dave Blunts</p>
+                        <div class="music-meta">
+                            <span class="duration">3:30</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="dave-blunts">
+                    <div class="music-image">
+                        <img src="https://images.genius.com/19c856df9f10d7c4e3d3b8c304c66402.1000x1000x1.png" alt="JAW WIZ RANT WAR 1">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>JAW WIZ RANT WAR 1</h4>
+                        <p>Dave Blunts</p>
+                        <div class="music-meta">
+                            <span class="duration">2:45</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="dave-blunts">
+                    <div class="music-image">
+                        <img src="https://images.genius.com/19c856df9f10d7c4e3d3b8c304c66402.1000x1000x1.png" alt="PDF Anonymous">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>PDF Anonymous</h4>
+                        <p>Dave Blunts</p>
+                        <div class="music-meta">
+                            <span class="duration">3:55</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="dave-blunts">
+                    <div class="music-image">
+                        <img src="https://images.genius.com/19c856df9f10d7c4e3d3b8c304c66402.1000x1000x1.png" alt="V BUCKS">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>V BUCKS</h4>
+                        <p>Dave Blunts</p>
+                        <div class="music-meta">
+                            <span class="duration">2:30</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="lil-uzi-vert">
+                    <div class="music-image">
+                        <img src="https://i.pinimg.com/736x/65/f0/ab/65f0ab0134d033a7f28d1c8d4c35ca27.jpg" alt="What About You (Cannon) Ruff">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>What About You (Cannon) Ruff</h4>
+                        <p>Lil Uzi Vert</p>
+                        <div class="music-meta">
+                            <span class="duration">3:15</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card" data-category="shoreline-mafia">
+                    <div class="music-image">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.lbTCfkx2FaUULmoZyUI_AQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Fenix Rob Ralfy How2GetIt">
+                        <div class="music-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="music-info">
+                        <h4>Fenix Rob Ralfy How2GetIt</h4>
+                        <p>Shoreline Mafia</p>
+                        <div class="music-meta">
+                            <span class="duration">3:45</span>
+                            <span class="quality">HQ</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="settings-modal" aria-hidden="true">
+        <div class="settings-dialog">
+            <div class="settings-header">
+                <h3>Audio Settings</h3>
+                <button id="closeSettings" class="settings-close" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="settings-content">
+                <div class="settings-row">
+                    <label for="bassSlider">Bass boost</label>
+                    <input type="range" id="bassSlider" min="-20" max="20" value="0">
+                    <span class="settings-value" id="bassValue">0 dB</span>
+                </div>
+                <div class="settings-row">
+                    <label for="masterVolume">Master volume</label>
+                    <input type="range" id="masterVolume" min="0" max="100" value="50">
+                    <span class="settings-value" id="masterValue">50%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="player-container">
+            <div class="player-info">
+                <div class="player-image">
+                    <img src="" alt="Now Playing" id="playerImage">
+                </div>
+                <div class="player-details">
+                    <h4 id="playerTitle">No track selected</h4>
+                    <p id="playerArtist">Select a track to play</p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button class="control-btn" id="prevBtn">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="control-btn play-pause" id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn" id="nextBtn">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+            </div>
+            <div class="player-progress">
+                <span class="time current-time">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="time total-time">0:00</span>
+            </div>
+            <div class="player-volume">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" class="volume-slider" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About LeakedSongs</h2>
+                    <p>We are passionate music enthusiasts dedicated to bringing you exclusive, unreleased tracks from your favorite artists. Our platform provides a curated collection of leaked music with high-quality audio and a seamless listening experience.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-music"></i>
+                            <h4>High Quality Audio</h4>
+                            <p>Premium sound quality for the best listening experience</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Mobile Optimized</h4>
+                            <p>Responsive design that works perfectly on all devices</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Secure Platform</h4>
+                            <p>Safe and secure music streaming platform</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LeakedSongs</h3>
+                    <p>Your ultimate destination for exclusive leaked music from top artists.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-soundcloud"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#artists">Artists</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">DMCA</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LeakedSongs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
