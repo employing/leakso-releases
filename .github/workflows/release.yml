@@ -24,7 +24,7 @@ jobs:
       - name: Build and publish (Windows)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx electron-builder -w --publish always
+        run: npx electron-builder -w --publish always --config.win.target=nsis
 
       - name: Upload dist as artifact (optional)
         uses: actions/upload-artifact@v4
