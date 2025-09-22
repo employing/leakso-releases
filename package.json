@@ -1,0 +1,46 @@
+{
+  "name": "leakso",
+  "version": "1.0.1",
+  "description": "LeakedSongs desktop player",
+  "main": "electron/main.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "electron-builder -w"
+  },
+  "dependencies": {
+    "electron-updater": "6.1.7"
+  },
+  "devDependencies": {
+    "electron": "29.4.0",
+    "electron-builder": "24.13.3"
+  },
+  "build": {
+    "appId": "com.leakso.player",
+    "productName": "Leakso",
+    "publish": {
+      "provider": "github",
+      "owner": "employing",
+      "repo": "leakso-releases"
+    },
+    "directories": {
+      "buildResources": "build"
+    },
+    "files": [
+      "index.html",
+      "styles.css",
+      "script.js",
+      "music/**",
+      "electron/**"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "artifactName": "Leakso-Setup-${version}.exe"
+    }
+  }
+}
+
