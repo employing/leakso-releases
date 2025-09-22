@@ -470,9 +470,11 @@
         // Create new audio
         currentAudio = new Audio();
         currentAudio.preload = "metadata";
-        // Convert relative path to file:// URL
-        const absolutePath = require('path').join(__dirname, '..', track.audio).replace(/\\/g, '/');
-        currentAudio.src = `file://${absolutePath}`;
+        // Build a proper file:// URL for Windows paths (handles spaces and special chars)
+        const path = require('path');
+        const { pathToFileURL } = require('url');
+        const absolutePath = path.join(__dirname, '..', track.audio);
+        currentAudio.src = pathToFileURL(absolutePath).href;
 
         // Setup Web Audio
         setupAudioPipeline();
